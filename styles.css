@@ -1,0 +1,165 @@
+html,
+body {
+	background-color: #14110F;
+	color: #eee;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+@font-face {
+	font-family: Robotica;
+	src: url(Robotica.ttf);
+}
+
+#bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#bg img {
+	height: 100%;
+	object-fit: cover;
+	animation: bounce-bg 2s infinite ease-in-out;
+}
+
+#content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#content>div {
+	width: 33%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	display: absolute;
+	bottom: -10px;
+	width: 100%;
+}
+
+#logo img {
+	width: 100%;
+	transform: scale(0.9);
+	animation: bounce 2s infinite ease-in-out;
+}
+
+a {
+	color: #F1B4CC;
+	/* text-shadow: #f28db5 1px 1px 0px; */
+}
+
+#brand div {
+	color: #fff;
+	font-size: 96px;
+	font-family: Robotica;
+	letter-spacing: 10%;
+	-webkit-text-stroke-color: #F1B4CC;
+	-webkit-text-stroke-width: 5px;
+	text-shadow: #f28db5 6px 6px 0px;
+	padding-left: 2px;
+	margin: 0;
+	margin-top: -13px;
+}
+
+box {
+	font-weight: bold;
+	padding: 10px;
+	background-color: #34312D;
+	box-shadow: #34312D 5px 5px 0px;
+	border: #59585f 5px solid;
+	margin-bottom: 20px;
+}
+
+icon {
+	display: inline-flex;
+	width: 42px;
+	height: 42px;
+	filter: invert();
+}
+
+box>span {
+	font-size: 32px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+button {
+	font-size: 20px;
+	font-weight: bolder;
+	padding: 12px;
+	color: #eee;
+	background-color: #F1B4CC;
+	border: #f28db5 5px solid;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.windows {
+	background: url(https://rpcs3.net/img/icons/buttons/windows.png) left center / 42px no-repeat;
+}
+
+.mac {
+	background: url(https://rpcs3.net/img/icons/buttons/macos.png) left center / 42px no-repeat;
+}
+
+.linux {
+	background: url(https://rpcs3.net/img/icons/buttons/linux.png) left center / 42px no-repeat;
+	width: 42px;
+}
+
+#brand {
+	width: fit-content;
+	height: 60px;
+	background-color: #34312D;
+	box-shadow: #34312D 5px 5px 0px;
+	border: #59585f 10px solid;
+	border-radius: 50px;
+	margin-bottom: 30px;
+}
+
+@keyframes bounce {
+	50% {
+		transform: scale(1.1);
+	}
+}
+
+@keyframes bounce-bg {
+	50% {
+		transform: scale(1.05);
+	}
+}
+
+/* 
+#brand {
+	height: 60px;
+	background-color: #32617a;
+	box-shadow: #32617a 5px 5px 0px;
+	border: #48ACF0 10px solid;
+	border-radius: 50px;
+} */
+
+@media screen and (max-width: 768px) {
+	#content {
+		flex-direction: column;
+	}
+
+	#content>div {
+		width: 100%;
+	}
+}

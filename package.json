@@ -1,0 +1,18 @@
+{
+	"name": "nostlan-web",
+	"version": "1.0.0",
+	"description": "nostlan.com",
+	"main": "index.html",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"version": "git add -A",
+		"postversion": "git push",
+		"v": "npm version patch --force",
+		"V": "npm version minor --force"
+	},
+	"keywords": [
+		"nostlan"
+	],
+	"author": "quinton-ashley",
+	"license": "UNLICENSED"
+}
