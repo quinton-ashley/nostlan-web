@@ -7,6 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
+	overflow: hidden;
 }
 
 #content>#mobile {
@@ -233,13 +234,18 @@ button:hover {
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 	#content {
 		flex-direction: row;
 	}
 
 	#content>div {
 		flex-direction: column;
+	}
+
+	#logo img {
+		max-width: 50vh;
+		max-height: 50vh;
 	}
 
 	#content>#downloads {
