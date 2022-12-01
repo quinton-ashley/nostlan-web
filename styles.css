@@ -136,6 +136,7 @@ button {
 }
 
 button:hover {
+	text-decoration: underline;
 	box-shadow: #fff 2px 2px 10px;
 	animation: spotlight 2s infinite ease-in-out;
 }
