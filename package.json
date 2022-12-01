@@ -1,6 +1,6 @@
 {
 	"name": "nostlan-web",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "nostlan.com",
 	"main": "index.html",
 	"scripts": {
