@@ -1,6 +1,7 @@
 {
+	"author": "quinton-ashley",
 	"name": "nostlan-web",
-	"version": "1.0.10",
+	"version": "1.0.11",
 	"description": "nostlan.com",
 	"main": "index.html",
 	"scripts": {
@@ -13,6 +14,5 @@
 	"keywords": [
 		"nostlan"
 	],
-	"author": "quinton-ashley",
 	"license": "UNLICENSED"
 }
