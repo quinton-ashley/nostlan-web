@@ -1,7 +1,7 @@
 {
 	"author": "quinton-ashley",
 	"name": "nostlan-web",
-	"version": "1.0.12",
+	"version": "1.0.13",
 	"description": "nostlan.com",
 	"main": "index.html",
 	"scripts": {
