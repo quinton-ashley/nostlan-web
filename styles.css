@@ -1,5 +1,7 @@
 html,
 body {
+	--creme: #FFEAB7;
+	--pink: #FF6397;
 	background-color: #14110F;
 	color: #eee;
 	width: 100%;
@@ -59,31 +61,62 @@ body {
 }
 
 #logo img {
-	width: 100%;
-	transform: scale(0.9);
+	width: 80%;
 	animation: bounce 2s infinite ease-in-out;
 }
 
 #brand {
 	text-decoration: none;
+	font-family: Robotica;
 }
 
 a {
-	color: #F1B4CC;
+	color: var(--creme);
 }
 
 #brand div {
-	color: #fff;
-	font-size: 96px;
-	font-family: Robotica;
-	letter-spacing: 10%;
-	-webkit-text-stroke-color: #F1B4CC;
-	-webkit-text-stroke-width: 5px;
-	text-shadow: #f28db5 6px 6px 0px;
+	font-size: 128px;
+	letter-spacing: -5px;
 	padding-left: 2px;
 	margin: 0;
-	margin-top: -13px;
+	margin-top: -12px;
+	padding-top: 5px;
 }
+
+#txt0 {
+	position: relative;
+	top: 6px;
+	left: 6px;
+	color: #0009;
+}
+
+#txt1 {
+	position: relative;
+	top: -122px;
+	font-size: clamp(3rem, 25vmin, 8rem);
+	background: linear-gradient(90deg,
+			var(--creme),
+			var(--pink),
+			var(--creme)) 0 0 / 50% 100%;
+	color: transparent;
+	background-clip: text;
+	text-shadow: #fff2 6px 6px 2px;
+	-webkit-text-stroke-color: #fffd;
+	-webkit-text-stroke-width: 5px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	#txt1 {
+		animation: move-text 2s linear infinite;
+	}
+
+	@keyframes move-text {
+		to {
+			background-position: 100% 0;
+		}
+	}
+}
+
 
 box {
 	font-weight: bold;
@@ -109,6 +142,8 @@ icon {
 .system {
 	height: 42px;
 	display: flex;
+	font-family: Robotica;
+	letter-spacing: 1px;
 }
 
 .system span {
@@ -116,7 +151,7 @@ icon {
 	font-size: 32px;
 	margin-left: 10px;
 	margin-right: 10px;
-	margin-top: 4px;
+	margin-top: 10px;
 }
 
 .btn {
@@ -129,8 +164,11 @@ button {
 	font-weight: bolder;
 	padding: 12px;
 	color: #eee;
-	background-color: #F1B4CC;
-	border: #f28db5 5px solid;
+	background-color: #FF6397a0;
+	/* background: linear-gradient(45deg,
+			var(--creme),
+			var(--pink)); */
+	border: #eee8 5px solid;
 	border-radius: 10px;
 	cursor: pointer;
 }
@@ -157,7 +195,7 @@ button:hover {
 #brand {
 	width: fit-content;
 	height: 60px;
-	background-color: #34312D;
+	background: linear-gradient(45deg, #59585f, #34312D, #59585f);
 	box-shadow: #34312D 5px 5px 0px;
 	border: #59585f 10px solid;
 	border-radius: 50px;
