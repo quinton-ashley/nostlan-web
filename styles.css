@@ -18,7 +18,7 @@ body {
 
 @font-face {
 	font-family: Robotica;
-	src: url(Robotica.ttf);
+	src: url(assets/Robotica.ttf);
 }
 
 #bg {
@@ -180,15 +180,15 @@ button:hover {
 }
 
 .windows {
-	background: url(https://rpcs3.net/img/icons/buttons/windows.png) left center / 42px no-repeat;
+	background: url(assets/windows.webp) left center / 42px no-repeat;
 }
 
 .mac {
-	background: url(https://rpcs3.net/img/icons/buttons/macos.png) left center / 42px no-repeat;
+	background: url(assets/macos.png) left center / 42px no-repeat;
 }
 
 .linux {
-	background: url(https://rpcs3.net/img/icons/buttons/linux.png) left center / 42px no-repeat;
+	background: url(assets/linux.png) left center / 42px no-repeat;
 	width: 42px;
 }
 
